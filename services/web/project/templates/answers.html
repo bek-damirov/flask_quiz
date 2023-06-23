@@ -1,0 +1,20 @@
+ <table class="table table-bordered border-primary">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">вопрос</th>
+              <th scope="col">ответ</th>
+              <th scope="col">дата создания</th>
+            </tr>
+          </thead>
+     <tbody>
+          {% for ques in entities %}
+          <tr>
+              <th scope="row">{{ ques.id }}</th>
+              <td>{{ ques.question }}</td>
+              <td>{{ ques.answer }}</td>
+              <td>{{ ques.created_date }}</td>
+            </tr>
+          {% endfor %}
+          </tbody>
+ </table>
