@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Викторина</title>
-</head>
-<body>
-<form action="answers" method="POST">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Викторина</title>
+  </head>
+  <body>
+  <form action="answers" method="POST">
   <p>количестов требуемых вопросов<br>
-    <input type="text" name="number" value=""><br>
+    <input type="text"  name="number" value="" onkeypress="return /[0-9]/i.test(event.key)"><br>
     <input type="submit">
   </p>
 </form>
-</body>
+
+  </body>
 </html>
+
